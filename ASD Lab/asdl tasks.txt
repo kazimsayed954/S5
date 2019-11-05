@@ -1,0 +1,17 @@
+Registration: 
+KC - UI
+PK - send to backend
+
+Verification by RTO:
+1. List all pending applications for approval - KC
+2. List individual application details - SK
+3. Verify the barcode - PK
+
+Validation of details by conductors:
+1. Scan barcode - SK -- show a green tick or a red cross
+2. Fetch from database if student is valid or not - PK
+
+Complaint Portal:
+1. log the complaint to the database and if the count is >=3 send complaint to RTO - PK
+2. bus reg. number, complaint msg - SK
+3. File complaint by student - KC
