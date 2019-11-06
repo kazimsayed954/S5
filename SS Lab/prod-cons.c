@@ -4,13 +4,11 @@
 
 int mutex=1, n, full=0, empty, buffer[25], temp=0, f=-1, r=-1;
 
-void wait(int *s)
-{
+void wait(int *s) {
 	(*s)--;
 }
 
-void signal(int *s)
-{
+void signal(int *s) {
 	(*s)++;
 }
 

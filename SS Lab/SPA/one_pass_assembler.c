@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 void main()
 {
     FILE *f1, *f2, *f3, *f4, *f5;
