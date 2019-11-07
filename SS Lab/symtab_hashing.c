@@ -4,8 +4,7 @@
 
 #define LENGTH 7
 
-struct hashTable
-{
+struct hashTable {
     char label[10];
     int addr;
 } ht[LENGTH];
@@ -45,7 +44,7 @@ void search()
     scanf("%s", label);
     for (i=0; i<LENGTH; i++) {
         if (ht[i].addr) {
-            if (!strcmp(ht[i].label, la)) {
+            if (!strcmp(ht[i].label, label)) {
                 set=1;
                 s = ht[i].addr;
             }
@@ -58,23 +57,23 @@ void search()
 
 void main()
 {
-    for (int i = 0; i < LENGTH; i++)
-    {
+    for (int i = 0; i < LENGTH; i++) {
         ht[i].addr = -1;
         strcpy(ht[i].label, "");
     }
     int c = 0;
-    while (c < 3)
-    {
-        printf("Enter 1 to add label. \nEnter 2 to view hashtable. \n");
+    while (c <= 3) {
+        printf("\n1. Add label. \n2. View hashtable. \n3. Search for label. \nENTER CHOICE: ");
         scanf("%d", &c);
-        switch (c)
-        {
+        switch (c) {
             case 1:
                 addLabel();
                 break;
             case 2:
                 display();
+                break;
+            case 3: 
+                search();
                 break;
             default: exit(0);
         }

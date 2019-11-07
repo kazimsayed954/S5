@@ -15,7 +15,7 @@ void main()
     p = (struct process *)calloc(n, sizeof(struct process));
     for (i = 0; i < n; i++) {
         (p + i)->pname = i + 1;
-        printf("Enter the arrival time, burst time and priority of process %d\n", i + 1);
+        printf("Enter the arrival time, burst time and priority of process %d: ", i + 1);
         scanf("%d %d %d", &(p + i)->arrival, &(p + i)->burst, &(p + i)->priority);
         (p + i)->wt = (p + i)->tat = 0.0;
         (p + i)->done = 0;
@@ -58,8 +58,7 @@ void main()
         }
         printf("Process\tArrival time\tBurst time\tWaiting time\tTurnaround time\n");
         i = 0;
-        while (count < n)
-        {
+        while (count < n) {
             if ((p + i)->arrival <= tot_time) {
                 (p + i)->wt = tot_time - (p + i)->arrival;
                 tot_time += (p + i)->burst; //process executes
@@ -86,8 +85,7 @@ void main()
     case 3: //sort based on priority
         for (i = 0; i < n; i++) {
             for (j = 0; j < n - i - 1; j++) {
-                if ((p + j)->priority > (p + j + 1)->priority || ((p + j)->priority == (p + j + 1)->priority && (p + j)->arrival > (p + j + 1)->arrival))
-                {
+                if ((p + j)->priority > (p + j + 1)->priority || ((p + j)->priority == (p + j + 1)->priority && (p + j)->arrival > (p + j + 1)->arrival)) {
                     temp = *(p + j);
                     *(p + j) = *(p + j + 1);
                     *(p + j + 1) = temp;

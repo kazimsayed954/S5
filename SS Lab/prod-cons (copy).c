@@ -54,7 +54,7 @@ void main()
 	empty=n;
 	while (true) 
 	{
-		printf("1. Producer. \n2. Consumer. \n3.Exit. \nENTER CHOICE: ");
+		printf("1. Producer. \n2. Consumer. \n3. Exit. \nENTER CHOICE: ");
 		scanf("%d", &ch);
 		switch(ch) {
 			case 1: 
