@@ -16,7 +16,7 @@ void main()
         {
             int i = 0, j = 0;
             for (i = 2, j = 0; i < 8; i++, j++)
-                staddr[j] = line[i];
+                staddr[j] = line[i]; // starting address for the record
             staddr[j] = '\0';
             staddri = atoi(staddr);
             i = 12;

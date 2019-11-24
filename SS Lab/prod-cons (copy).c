@@ -14,7 +14,7 @@ void signal(int *s) {
 
 void producer() {
 	int x;
-	wait (&mutex);
+	wait(&mutex);
 	signal(&full);
 	wait(&empty);
 	// produce an item

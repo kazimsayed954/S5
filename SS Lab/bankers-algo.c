@@ -38,12 +38,9 @@ void main() {
             need[i][j] = max[i][j] - alloc[i][j];
 
     printf("\nNeed matrix: \n");
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++)
-        {   
             printf("%d ", need[i][j]);
-        }
         printf("\n");
     }
 
@@ -81,6 +78,5 @@ void main() {
             printf("%d ", work[i]);
         printf("\n");
     }
-
     printf("\nThe processes are in safe state. \n");
 }
