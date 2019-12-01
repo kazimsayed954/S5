@@ -15,3 +15,10 @@ Complaint Portal:
 1. log the complaint to the database and if the count is >=3 send complaint to RTO - PK
 2. bus reg. number, complaint msg - SK
 3. File complaint by student - KC
+
+
+
+SK:
+1. Scan barcode - SK -- show a green tick or a red cross
+2. bus reg. number, complaint msg - SK
+3. List individual application details - SK
